@@ -12,7 +12,8 @@ screen.fill((0, 0, 0))
 for i in range(10):
     ew, eh = randint(1, 100), randint(1, 100)
     ex, ey = randint(1, 400), randint(1, 400)
-    pygame.draw.ellipse(screen, (255, 255, 0), (ex, ey, ew, eh))
+    r, b, g = randint(0, 255), randint(0, 255), randint(0, 255)
+    pygame.draw.ellipse(screen, (r, b, g), (ex, ey, ew, eh))
 
 pygame.display.flip()
 
